@@ -44,7 +44,7 @@ void consultaCursoCodigo(void);
 int main(){
     int op;
 	do {
-		printf("\n\n\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"); // /t È tab
+		printf("\n\n\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"); // /t √© tab
 		printf("\t~   Escolha uma das opcoes   ~\n");
 		printf("\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 		printf("\n\t1- Cadastrar Aluno\n");
@@ -123,7 +123,7 @@ void cadastraAluno(){
 		   printf("\nCPF: ");
 		   fflush(stdin);
 		   gets(cpf);
-		   while(fread(&registro, sizeof(aluno), 1, arq) > 0) { // o & È operador de endereÁo
+		   while(fread(&registro, sizeof(aluno), 1, arq) > 0) { // o & √© operador de endere√ßo
 			if(strncmp(cpf,registro.cpf, strlen(cpf)) == 0){ /* O strncmp compara caracteres de um string e pode ser
 			 enumerada a qntd de caracteres a serem comparadas. Usado para validar o cpf que esta sendo cadastrado */
 			  a=a+1;
@@ -154,7 +154,7 @@ void cadastraAluno(){
 		printf("\nTelefone: ");
 		fflush(stdin);
 		gets(aux);
-	    registro.telefone=atoi(aux);
+	    	registro.telefone=atoi(aux);
 
 	    
 		fwrite(&registro, sizeof(aluno), 1, arq);
